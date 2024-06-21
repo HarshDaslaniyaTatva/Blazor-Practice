@@ -1,0 +1,68 @@
+﻿@page "/products"
+@using BlazorApp.Models
+@using BlazorApp.Services.Interface
+@using System.Diagnostics
+@inject IProductService _product
+@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+
+
+<button @onclick="CreateProduct">Add Product</button>
+<h3>Product List</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Image</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in _products)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Title</td>
+                <td>@product.Category</td>
+                <td><img src="@product.Image" alt="Product Image" style="width: 50px; height: auto;" /></td>
+                <td>@product.Description</td>
+                <td>
+                    <button @onclick="() => EditProduct(product.Id)">Edit</button>
+                    <button @onclick="() => DeleteProduct(product.Id)">Delete</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    private IEnumerable<ProductModels> _products = new List<ProductModels>();
+   
+
+    protected async override Task OnInitializedAsync()
+    {
+        Debug.WriteLine("OnInitializedAsync called"); // Debugging line
+        _products = await _product.GetProduct();
+    }
+
+    public void CreateProduct()
+    {
+        Debug.WriteLine("CreateProduct method called"); // Debugging line
+        NavigationManager.NavigateTo("/editproduct");
+    }
+
+    private void EditProduct(int id)
+    {
+        NavigationManager.NavigateTo($"/editproduct/{id}");
+    }
+
+    private async void DeleteProduct(int id)
+    {
+        Debug.WriteLine($"DeleteProduct method called with id: {id}"); // Debugging line
+        await _product.DeleteProduct(id);
+        _products = await _product.GetProduct();
+    }
+}

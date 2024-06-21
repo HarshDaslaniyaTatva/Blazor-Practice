@@ -1,0 +1,61 @@
+﻿@page "/editproduct"
+@page "/editproduct/{Id:int}"
+@using BlazorApp.Services.Interface
+@using BlazorApp.Models
+@inject IProductService _product
+@inject NavigationManager NavigationManager
+
+<h3>@(Id.HasValue ? "Edit Product" : "Add Product")</h3>
+<EditForm Model="product" OnValidSubmit="HandleValidSubmit" FormName="productForm">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div>
+        <label for="title">Title:</label>
+        <InputText id="title" @bind-Value="product.Title" />
+    </div>
+    <div>
+        <label for="price">Price:</label>
+        <InputNumber id="price" @bind-Value="product.Price" />
+    </div>
+    <div>
+        <label for="category">Category:</label>
+        <InputText id="category" @bind-Value="product.Category" />
+    </div>
+    <div>
+        <label for="description">Description:</label>
+        <InputText id="description" @bind-Value="product.Description" />
+    </div>
+    <div>
+        <label for="image">Image:</label>
+        <InputText id="image" @bind-Value="product.Image" />
+    </div>
+    <button type="submit">Save</button>
+</EditForm>
+
+@code {
+    private ProductModels product = new ProductModels();
+
+    [Parameter]
+    public int? Id { get; set; }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (Id.HasValue)
+        {
+            product = await _product.GetProduct(Id.Value) ?? new ProductModels();
+        }
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        if (Id.HasValue)
+        {
+            await _product.UpdateProduct(product);
+        }
+        else
+        {
+            await _product.AddProduct(product);
+        }
+        NavigationManager.NavigateTo("/products");
+    }
+}
