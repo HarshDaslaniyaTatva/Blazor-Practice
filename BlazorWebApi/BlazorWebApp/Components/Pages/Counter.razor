@@ -1,0 +1,29 @@
+﻿@page "/counter"
+@using BlazorWebApp.Stores.CounterStore
+@using System.Diagnostics
+@rendermode InteractiveServer
+@inject CounterStore CounterStore
+
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count:@CounterStore.GetState().Count</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        CounterStore.AddStateChangeListener(() => { StateHasChanged(); });
+        Debug.WriteLine(CounterStore.GetState().Count + "-----bbbbbb");
+    }
+    private void IncrementCount()
+    {
+        CounterStore.IncrementCount();
+        Debug.WriteLine(CounterStore.GetState().Count + "-----bbbbbb");
+    }
+}

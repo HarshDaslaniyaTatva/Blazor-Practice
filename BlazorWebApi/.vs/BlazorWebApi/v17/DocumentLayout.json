@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|d:\\project\\blazor\\assigment\\blazorwebapi\\blazorwebapp\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|solutionrelative:blazorwebapp\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|d:\\project\\blazor\\assigment\\blazorwebapi\\blazorwebapp\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|solutionrelative:blazorwebapp\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|d:\\project\\blazor\\assigment\\blazorwebapi\\blazorwebapp\\stores\\counterstore\\counterstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|solutionrelative:blazorwebapp\\stores\\counterstore\\counterstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|d:\\project\\blazor\\assigment\\blazorwebapi\\blazorwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|solutionrelative:blazorwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,15 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "BlazorWebApp\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "BlazorWebApp\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACgAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T11:45:29.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\Program.cs",
+              "RelativeDocumentMoniker": "BlazorWebApp\\Program.cs",
+              "ToolTip": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\Program.cs",
+              "RelativeToolTip": "BlazorWebApp\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T11:31:31.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CounterStore.cs",
+              "DocumentMoniker": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\Stores\\CounterStore\\CounterStore.cs",
+              "RelativeDocumentMoniker": "BlazorWebApp\\Stores\\CounterStore\\CounterStore.cs",
+              "ToolTip": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\Stores\\CounterStore\\CounterStore.cs",
+              "RelativeToolTip": "BlazorWebApp\\Stores\\CounterStore\\CounterStore.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAmwDQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T11:03:09.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\Components\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "BlazorWebApp\\Components\\Pages\\Counter.razor",
+              "ToolTip": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\Components\\Pages\\Counter.razor",
+              "RelativeToolTip": "BlazorWebApp\\Components\\Pages\\Counter.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T10:59:31.106Z",
+              "EditorCaption": ""
             }
           ]
         },
