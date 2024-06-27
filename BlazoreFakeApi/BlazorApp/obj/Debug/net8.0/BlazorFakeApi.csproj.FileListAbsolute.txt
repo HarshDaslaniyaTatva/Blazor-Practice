@@ -1,0 +1,6 @@
+D:\Project\Blazor\Assigment\BlazorApp\obj\Debug\net8.0\BlazorFakeApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Blazor\Assigment\BlazorApp\obj\Debug\net8.0\BlazorFakeApi.AssemblyInfoInputs.cache
+D:\Project\Blazor\Assigment\BlazorApp\obj\Debug\net8.0\BlazorFakeApi.AssemblyInfo.cs
+D:\Project\Blazor\Assigment\BlazorApp\obj\Debug\net8.0\BlazorFakeApi.csproj.CoreCompileInputs.cache
+D:\Project\Blazor\Assigment\BlazorApp\obj\Debug\net8.0\BlazorFakeApi.MvcApplicationPartsAssemblyInfo.cache
+D:\Project\Blazor\Assigment\BlazorApp\obj\Debug\net8.0\BlazorFakeApi.sourcelink.json

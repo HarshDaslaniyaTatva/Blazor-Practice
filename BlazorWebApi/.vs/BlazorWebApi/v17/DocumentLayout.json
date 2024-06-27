@@ -3,20 +3,40 @@
   "WorkspaceRootPath": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|d:\\project\\blazor\\assigment\\blazorwebapi\\blazorwebapp\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|solutionrelative:blazorwebapp\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|d:\\project\\blazor\\assigment\\blazorwebapi\\blazorwebapp\\blazorwebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|solutionrelative:blazorwebapp\\blazorwebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91177B02-8485-4672-8527-6C976D8D5F69}|WebApi\\WebApi.csproj|d:\\project\\blazor\\assigment\\blazorwebapi\\webapi\\webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{91177B02-8485-4672-8527-6C976D8D5F69}|WebApi\\WebApi.csproj|solutionrelative:webapi\\webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|d:\\project\\blazor\\assigment\\blazorwebapi\\blazorwebapp\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|solutionrelative:blazorwebapp\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|d:\\project\\blazor\\assigment\\blazorwebapi\\blazorwebapp\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|solutionrelative:blazorwebapp\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|d:\\project\\blazor\\assigment\\blazorwebapi\\blazorwebapp\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|solutionrelative:blazorwebapp\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|d:\\project\\blazor\\assigment\\blazorwebapi\\blazorwebapp\\stores\\counterstore\\counterstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|solutionrelative:blazorwebapp\\stores\\counterstore\\counterstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|d:\\project\\blazor\\assigment\\blazorwebapi\\blazorwebapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|solutionrelative:blazorwebapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|d:\\project\\blazor\\assigment\\blazorwebapi\\blazorwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|solutionrelative:blazorwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|d:\\project\\blazor\\assigment\\blazorwebapi\\blazorwebapp\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B2746D6-B352-4F9E-90C1-57C79A0EE089}|BlazorWebApp\\BlazorWebApp.csproj|solutionrelative:blazorwebapp\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,57 +49,123 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\Program.cs",
+              "RelativeDocumentMoniker": "BlazorWebApp\\Program.cs",
+              "ToolTip": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\Program.cs",
+              "RelativeToolTip": "BlazorWebApp\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAiwAkAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T11:31:31.719Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BlazorWebApp",
+              "DocumentMoniker": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\BlazorWebApp.csproj",
+              "RelativeDocumentMoniker": "BlazorWebApp\\BlazorWebApp.csproj",
+              "ToolTip": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\BlazorWebApp.csproj",
+              "RelativeToolTip": "BlazorWebApp\\BlazorWebApp.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-27T06:09:22.646Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "WebApi",
+              "DocumentMoniker": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\WebApi\\WebApi.csproj",
+              "RelativeDocumentMoniker": "WebApi\\WebApi.csproj",
+              "ToolTip": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\WebApi\\WebApi.csproj",
+              "RelativeToolTip": "WebApi\\WebApi.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-27T06:07:46.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "BlazorWebApp\\Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "BlazorWebApp\\Components\\Pages\\Home.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T06:17:56.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.razor",
+              "DocumentMoniker": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\Components\\App.razor",
+              "RelativeDocumentMoniker": "BlazorWebApp\\Components\\App.razor",
+              "ToolTip": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\Components\\App.razor",
+              "RelativeToolTip": "BlazorWebApp\\Components\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T06:17:50.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "BlazorWebApp\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "BlazorWebApp\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T06:17:46.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "BlazorWebApp\\Components\\Layout\\NavMenu.razor",
               "ToolTip": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\Components\\Layout\\NavMenu.razor",
               "RelativeToolTip": "BlazorWebApp\\Components\\Layout\\NavMenu.razor",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACgAAAA2AAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-25T11:45:29.488Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\Program.cs",
-              "RelativeDocumentMoniker": "BlazorWebApp\\Program.cs",
-              "ToolTip": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\Program.cs",
-              "RelativeToolTip": "BlazorWebApp\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T11:31:31.719Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "CounterStore.cs",
               "DocumentMoniker": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\Stores\\CounterStore\\CounterStore.cs",
               "RelativeDocumentMoniker": "BlazorWebApp\\Stores\\CounterStore\\CounterStore.cs",
               "ToolTip": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\Stores\\CounterStore\\CounterStore.cs",
               "RelativeToolTip": "BlazorWebApp\\Stores\\CounterStore\\CounterStore.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAmwDQAAAAIAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwDkAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-25T11:03:09.884Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Counter.razor",
               "DocumentMoniker": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\Components\\Pages\\Counter.razor",
               "RelativeDocumentMoniker": "BlazorWebApp\\Components\\Pages\\Counter.razor",
               "ToolTip": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\Components\\Pages\\Counter.razor",
               "RelativeToolTip": "BlazorWebApp\\Components\\Pages\\Counter.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAABHAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-25T10:59:31.106Z",
               "EditorCaption": ""

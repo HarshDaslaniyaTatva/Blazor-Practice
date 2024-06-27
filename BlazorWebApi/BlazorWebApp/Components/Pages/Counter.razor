@@ -3,6 +3,7 @@
 @using System.Diagnostics
 @rendermode InteractiveServer
 @inject CounterStore CounterStore
+@implements IDisposable
 
 
 <PageTitle>Counter</PageTitle>
@@ -14,16 +15,19 @@
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
 @code {
-    protected override void OnInitialized()
-    {
-        base.OnInitialized();
 
-        CounterStore.AddStateChangeListener(() => { StateHasChanged(); });
-        Debug.WriteLine(CounterStore.GetState().Count + "-----bbbbbb");
-    }
     private void IncrementCount()
     {
         CounterStore.IncrementCount();
-        Debug.WriteLine(CounterStore.GetState().Count + "-----bbbbbb");
+    }
+
+    protected override void OnInitialized()
+    {
+        CounterStore.AddStateChangeListener(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        CounterStore.RemoveStateChangeListener(StateHasChanged);
     }
 }
