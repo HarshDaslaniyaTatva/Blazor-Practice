@@ -1,8 +1,10 @@
 ﻿@page "/counter"
+@using BlazorWebApp.Stores
 @using BlazorWebApp.Stores.CounterStore
 @using System.Diagnostics
 @rendermode InteractiveServer
 @inject CounterStore CounterStore
+@inject IActionDispatcher actionDispatcher
 @implements IDisposable
 
 
@@ -18,7 +20,7 @@
 
     private void IncrementCount()
     {
-        CounterStore.IncrementCount();
+        actionDispatcher.Dispatch(new IncrementAction());
     }
 
     protected override void OnInitialized()

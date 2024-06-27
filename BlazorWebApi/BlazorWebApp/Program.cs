@@ -1,4 +1,5 @@
 using BlazorWebApp.Components;
+using BlazorWebApp.Stores;
 using BlazorWebApp.Stores.CounterStore;
 using Microsoft.AspNetCore.Components;
 
@@ -8,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 builder.Services.AddScoped<CounterStore>();
+builder.Services.AddScoped<IActionDispatcher , ActionDispatcher>();
 
 var app = builder.Build();
 

@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BlazoreFakeApi\\BlazorApp",
-    "\\BlazorWebApi\\BlazorWebApp"
+    "\\BlazorWebApi",
+    "\\BlazorWebApi\\BlazorWebApp",
+    "\\BlazorWebApi\\WebApi"
   ],
-  "SelectedNode": "\\BlazorWebApi",
   "PreviewInSolutionExplorer": false
 }
