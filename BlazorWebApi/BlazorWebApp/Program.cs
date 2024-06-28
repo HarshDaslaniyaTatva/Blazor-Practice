@@ -1,7 +1,9 @@
 using BlazorWebApp.Components;
+using BlazorWebApp.Services.Implementation;
+using BlazorWebApp.Services.Interface;
 using BlazorWebApp.Stores;
 using BlazorWebApp.Stores.CounterStore;
-using Microsoft.AspNetCore.Components;
+using MudBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +11,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 builder.Services.AddScoped<CounterStore>();
-builder.Services.AddScoped<IActionDispatcher , ActionDispatcher>();
+builder.Services.AddScoped<IActionDispatcher, ActionDispatcher>();
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped(hc => new HttpClient()
+{
+    BaseAddress = new Uri("https://localhost:7084/")
+});
+builder.Services.AddMudServices();
 
 var app = builder.Build();
 
@@ -22,7 +30,6 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseStaticFiles();
 app.UseAntiforgery();
 

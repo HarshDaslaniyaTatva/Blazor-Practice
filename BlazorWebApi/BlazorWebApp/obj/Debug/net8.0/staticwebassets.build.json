@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "kn1u92OzBEM6bzV5Wvev6YaysILNaTfzXcNPbHH3OaI=",
+  "Hash": "pqMP1pJRYDHrsqUtWG6CaL0aYmhId0odpmyFDLNT5lM=",
   "Source": "BlazorWebApp",
   "BasePath": "_content/BlazorWebApp",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\WebApi\\WebApi.csproj",
+      "Version": 2,
+      "Source": "WebApi",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [
     {
       "Name": "BlazorWebApp\\wwwroot",
@@ -16,6 +28,44 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\pci182\\.nuget\\packages\\mudblazor\\7.0.0-rc.2\\staticwebassets\\MudBlazor.min.css",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\pci182\\.nuget\\packages\\mudblazor\\7.0.0-rc.2\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\pci182\\.nuget\\packages\\mudblazor\\7.0.0-rc.2\\staticwebassets\\MudBlazor.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\pci182\\.nuget\\packages\\mudblazor\\7.0.0-rc.2\\staticwebassets\\MudBlazor.min.js",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\pci182\\.nuget\\packages\\mudblazor\\7.0.0-rc.2\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\pci182\\.nuget\\packages\\mudblazor\\7.0.0-rc.2\\staticwebassets\\MudBlazor.min.js"
+    },
     {
       "Identity": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorWebApp.styles.css",
       "SourceId": "BlazorWebApp",
