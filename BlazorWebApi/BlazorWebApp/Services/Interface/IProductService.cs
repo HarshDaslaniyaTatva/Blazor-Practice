@@ -1,13 +1,14 @@
 ﻿using BlazorWebApp.Dtos;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BlazorWebApp.Services.Interface
 {
     public interface IProductService
     {
-        public Task<List<GetProductDtos>> GetProduct();
+        public Task<FilterProductRequestDto> GetProduct(int pagesize, int currentpage, string? sortfield, bool sort, string? searchfield, string? search);
         Task<GetProductDtos?> GetProduct(int id);
-        Task AddProduct(GetProductDtos product);
-        Task UpdateProduct(GetProductDtos product);
-        Task DeleteProduct(int id);
+        Task<ResponseDto<bool>> AddProduct(SetProductDto productDto);
+        Task<ResponseDto<bool>> UpdateProduct(int id, GetProductDtos productDto);
+        Task<ResponseDto<bool>> DeleteProduct(int id);
     }
 }

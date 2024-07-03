@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pqMP1pJRYDHrsqUtWG6CaL0aYmhId0odpmyFDLNT5lM=",
+  "Hash": "GM2ZB1ybO6S7JQYjIM4FtkXTfi4hIK+CCTYc88ALxxk=",
   "Source": "BlazorWebApp",
   "BasePath": "_content/BlazorWebApp",
   "Mode": "Default",
@@ -179,6 +179,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\wwwroot\\js\\app.js",
+      "SourceId": "BlazorWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\BlazorWebApp\\wwwroot\\",
+      "BasePath": "_content/BlazorWebApp",
+      "RelativePath": "js/app.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\app.js"
     }
   ]
 }

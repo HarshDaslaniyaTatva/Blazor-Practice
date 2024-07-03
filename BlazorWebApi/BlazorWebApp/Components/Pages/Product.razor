@@ -1,98 +1,31 @@
 ﻿@page "/Product"
-@using System.Diagnostics
 @using BlazorWebApp.Dtos
-@using BlazorWebApp.Services.Interface
-@inject IProductService _product
+@inject IProductService productService
+@using Microsoft.AspNetCore.Components.Forms
 @rendermode InteractiveServer
-@inject NavigationManager NavigationManager
-@using MudBlazor
-@using MudBlazorFix
+@inject IJSRuntime JSRuntime
 
 <h3>Products</h3>
+<!-- Modal -->
+<AddModal OnSave="SaveProduct"></AddModal>
+<ProductTable @ref="productTable"></ProductTable>
 
-@* @if (_products == null)
-{
-    <p><em>Loading...</em></p>
-}
- else if (_products.Count == 0)
-{
-    <p>No products available.</p>
-} 
-else
-{
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Product ID</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Price</th>
-                <th>Stock Quantity</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var product in _products)
-            {
-                <tr>
-                    <td>@product.ProductId</td>
-                    <td>@product.Name</td>
-                    <td>@product.Description</td>
-                    <td>@product.Price</td>
-                    <td>@product.StockQuantity</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-} *@
+<!-- Button to Open Modal -->
+<div class="text-end">
+    <button class="btn btn-primary" @onclick="() => ShowAddModal()">Add Product</button>
+</div>
 
-<MudTable Items="@_products" Hover="true" SortLabel="Sort By">
-    <HeaderContent>
-        <MudTh><MudTableSortLabel SortBy="new Func<GetProductDtos, object>(x=>x.ProductId)">Id</MudTableSortLabel></MudTh>
-        <MudTh><MudTableSortLabel InitialDirection="SortDirection.Ascending" SortBy="new Func<GetProductDtos, object>(x=>x.Name)">Name</MudTableSortLabel></MudTh>
-        <MudTh><MudTableSortLabel Enabled="@enabled" SortBy="new Func<GetProductDtos, object>(x=>x.Description)">Description</MudTableSortLabel></MudTh>
-        <MudTh><MudTableSortLabel SortBy="new Func<GetProductDtos, object>(x=>x.Price)">Price</MudTableSortLabel></MudTh>
-        <MudTh><MudTableSortLabel SortBy="new Func<GetProductDtos, object>(x=>x.StockQuantity)">Stock Quantity</MudTableSortLabel></MudTh>
-    </HeaderContent>
-    <RowTemplate>
-        <MudTd DataLabel="ProductId">@context.ProductId</MudTd>
-        <MudTd DataLabel="Name">@context.Name</MudTd>
-        <MudTd DataLabel="Description">@context.Description</MudTd>
-        <MudTd DataLabel="Price">@context.Price</MudTd>
-        <MudTd DataLabel="Stock Quantity">@context.StockQuantity</MudTd>
-    </RowTemplate>
-    <PagerContent>
-        <MudTablePager PageSizeOptions="new int[] { 10, 25, 50, 100 }" />
-    </PagerContent>
-</MudTable>
 
 @code {
-    private bool enabled = true;
-    private IEnumerable<GetProductDtos> _products = new List<GetProductDtos>();
-
-
-    protected async override Task OnInitializedAsync()
+    public ProductTable productTable;
+    private async void ShowAddModal()
     {
-        Debug.WriteLine("OnInitializedAsync called"); // Debugging line
-        _products = await _product.GetProduct();
+        await JSRuntime.InvokeVoidAsync("showModal", "addProductModal");
     }
 
-    public void CreateProduct()
+    private async Task SaveProduct()
     {
-        Debug.WriteLine("CreateProduct method called"); // Debugging line
-        NavigationManager.NavigateTo("/editproduct");
-    }
-
-    private void EditProduct(int id)
-    {
-        NavigationManager.NavigateTo($"/editproduct/{id}");
-    }
-
-    private async void DeleteProduct(int id)
-    {
-        Debug.WriteLine($"DeleteProduct method called with id: {id}"); // Debugging line
-        await _product.DeleteProduct(id);
-        _products = await _product.GetProduct();
+        await productTable.LoadData(1);
+        await JSRuntime.InvokeVoidAsync("hideModal", "addProductModal");
     }
 }
-
-

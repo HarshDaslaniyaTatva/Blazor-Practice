@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWebApp", "BlazorWebAp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{91177B02-8485-4672-8527-6C976D8D5F69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiEntity", "WebApiEntity\WebApiEntity.csproj", "{2A51CFCD-ACBF-4728-8166-4D6816895F99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiEntity", "WebApiEntity\WebApiEntity.csproj", "{2A51CFCD-ACBF-4728-8166-4D6816895F99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

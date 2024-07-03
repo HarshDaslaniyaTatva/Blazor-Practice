@@ -25,8 +25,20 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Project/Blazor/Assigment/BlazorWebApi/BlazorWebApp/Components/Pages/AddModal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGRNb2RhbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Project/Blazor/Assigment/BlazorWebApi/BlazorWebApp/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/Blazor/Assigment/BlazorWebApi/BlazorWebApp/Components/Pages/DeleteProductModal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEZWxldGVQcm9kdWN0TW9kYWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/Blazor/Assigment/BlazorWebApi/BlazorWebApp/Components/Pages/EditProductModal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFZGl0UHJvZHVjdE1vZGFsLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Project/Blazor/Assigment/BlazorWebApi/BlazorWebApp/Components/Pages/Error.razor]
@@ -39,6 +51,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Project/Blazor/Assigment/BlazorWebApi/BlazorWebApp/Components/Pages/Product.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/Blazor/Assigment/BlazorWebApi/BlazorWebApp/Components/Pages/ProductTable.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0VGFibGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Project/Blazor/Assigment/BlazorWebApi/BlazorWebApp/Components/Routes.razor]

@@ -1,7 +1,23 @@
-﻿@page "/"
+﻿@rendermode InteractiveServer
+@inject IJSRuntime JSRuntime
+@page "/"
 
-<PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<h3>Run JavaScript in Blazor</h3>
 
-Welcome to your new app.
+<button @onclick="RunJavaScript">Run JavaScript</button>
+
+@code {
+    private async Task RunJavaScript()
+    {
+        try
+        {
+            // Call the JavaScript function showAlert from custom.js
+            await JSRuntime.InvokeVoidAsync("showAlert", "Hello from Blazor!");
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"Error invoking JavaScript function: {ex.Message}");
+        }
+    }
+}

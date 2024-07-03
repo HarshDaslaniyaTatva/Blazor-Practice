@@ -16,63 +16,182 @@ namespace BlazorWebApp.Services.Implementation
                 PropertyNameCaseInsensitive = true,
             };
         }
-        public async Task<List<GetProductDtos>> GetProduct()
+        private string ConstructUrl(int pagesize, int currentpage, string? sortfield, bool sort, string? searchfield, string? search)
+        {
+            var queryParams = new List<string>();
+
+            if (pagesize > 0)
+            {
+                queryParams.Add($"pagesize={pagesize}");
+            }
+
+            if (currentpage > 0)
+            {
+                queryParams.Add($"currentpage={currentpage}");
+            }
+
+            if (!string.IsNullOrEmpty(sortfield))
+            {
+                queryParams.Add($"sortfield={sortfield}");
+            }
+
+            queryParams.Add($"sort={sort}");
+
+            if (!string.IsNullOrEmpty(searchfield))
+            {
+                queryParams.Add($"searchfield={searchfield}");
+            }
+
+            if (!string.IsNullOrEmpty(search))
+            {
+                queryParams.Add($"search={search}");
+            }
+
+            string queryString = string.Join("&", queryParams);
+            return $"api/product?{queryString}";
+        }
+
+        public async Task<FilterProductRequestDto> GetProduct(int pagesize, int currentpage, string? sortfield, bool sort, string? searchfield, string? search)
         {
             try
             {
-                var apijson = await _httpClient.GetStreamAsync("api/product");
-                var products = await JsonSerializer.DeserializeAsync<List<GetProductDtos>>(apijson, _serializerOptions);
-                return products;
+                string url = ConstructUrl(pagesize, currentpage, sortfield, sort, searchfield, search);
+                FilterProductRequestDto? products = await _httpClient.GetFromJsonAsync<FilterProductRequestDto>(url, _serializerOptions);
+                return products ?? new();
             }
-            catch (System.Exception)
+            catch (System.Exception ex)
             {
-
+                Console.WriteLine(ex.Message);
                 throw;
             }
         }
-
+        
         public async Task<GetProductDtos?> GetProduct(int id)
         {
-            return await _httpClient.GetFromJsonAsync<GetProductDtos>($"product/{id}");
-        }
-        public async Task AddProduct(GetProductDtos product)
-        {
             try
             {
-                await _httpClient.PostAsJsonAsync("products", product);
+                return await _httpClient.GetFromJsonAsync<GetProductDtos>($"api/product/{id}");
             }
-            catch (System.Exception)
+            catch (System.Exception ex)
             {
-
+                Console.WriteLine(ex.Message);
                 throw;
             }
         }
 
-        public async Task DeleteProduct(int id)
+        public async Task<ResponseDto<bool>> AddProduct(SetProductDto productDto)
         {
             try
             {
-                await _httpClient.DeleteAsync($"products/{id}");
-            }
-            catch (System.Exception)
-            {
+                var response = await _httpClient.PostAsJsonAsync("api/product", productDto, _serializerOptions);
 
-                throw;
+                if (response.IsSuccessStatusCode)
+                {
+                    return new ResponseDto<bool>
+                    {
+                        Success = true,
+                        Message = "Product created successfully.",
+                        Data = true
+                    };
+                }
+                else
+                {
+                    return new ResponseDto<bool>
+                    {
+                        Success = false,
+                        Message = "Failed to create product. Status code: " + response.StatusCode,
+                        Data = false
+                    };
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Exception: " + ex.Message);
+                return new ResponseDto<bool>
+                {
+                    Success = false,
+                    Message = ex.Message,
+                    Data = false
+                };
             }
         }
 
 
-        public async Task UpdateProduct(GetProductDtos product)
+
+
+
+        public async Task<ResponseDto<bool>> UpdateProduct(int id, GetProductDtos productDto)
         {
             try
             {
-                await _httpClient.PutAsJsonAsync($"products/{product.ProductId}", product);
+                var response = await _httpClient.PutAsJsonAsync($"api/product/{id}", productDto, _serializerOptions);
+                if (response.IsSuccessStatusCode)
+                {
+                    return new ResponseDto<bool>
+                    {
+                        Success = true,
+                        Message = "Product updated successfully.",
+                        Data = true
+                    };
+                }
+                else
+                {
+                    return new ResponseDto<bool>
+                    {
+                        Success = false,
+                        Message = "Failed to update product.",
+                        Data = false
+                    };
+                }
             }
-            catch (System.Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                Console.WriteLine(ex.Message);
+                return new ResponseDto<bool>
+                {
+                    Success = false,
+                    Message = ex.Message,
+                    Data = false
+                };
             }
         }
+
+        public async Task<ResponseDto<bool>> DeleteProduct(int id)
+        {
+            try
+            {
+                var response = await _httpClient.DeleteAsync($"api/product/{id}");
+                if (response.IsSuccessStatusCode)
+                {
+                    return new ResponseDto<bool>
+                    {
+                        Success = true,
+                        Message = "Product deleted successfully.",
+                        Data = true
+                    };
+                }
+                else
+                {
+                    return new ResponseDto<bool>
+                    {
+                        Success = false,
+                        Message = "Failed to delete product.",
+                        Data = false
+                    };
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return new ResponseDto<bool>
+                {
+                    Success = false,
+                    Message = ex.Message,
+                    Data = false
+                };
+            }
+        }
+
+      
     }
 }

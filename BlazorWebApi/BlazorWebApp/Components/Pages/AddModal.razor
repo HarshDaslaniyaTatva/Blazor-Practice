@@ -1,0 +1,54 @@
+﻿@inject IJSRuntime JSRuntime
+<!-- AddProductModal.razor -->
+
+<div class="modal fade" id="addProductModal" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addProductModalLabel">Add Product</h5>
+                <button type="button" class="btn-close" aria-label="Close" @onclick="HideModal"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Product Form -->
+                <div class="form-group">
+                    <label for="productName">Name</label>
+                    <input type="text" class="form-control" id="productName" @bind="@product.Name">
+                </div>
+                <div class="form-group">
+                    <label for="productDescription">Description</label>
+                    <input type="text" class="form-control" id="productDescription" @bind="@product.Description">
+                </div>
+                <div class="form-group">
+                    <label for="productPrice">Price</label>
+                    <input type="number" class="form-control" id="productPrice" @bind="@product.Price">
+                </div>
+                <div class="form-group">
+                    <label for="productStock">Stock Quantity</label>
+                    <input type="number" class="form-control" id="productStock" @bind="@product.StockQuantity">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" @onclick="HideModal">Close</button>
+                <button type="button" class="btn btn-primary" @onclick="SaveProduct">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    public async void HideModal()
+    {
+        await JSRuntime.InvokeVoidAsync("hideModal", "addProductModal");
+    }
+
+    [Parameter]
+    public EventCallback OnSave { get; set; }
+
+    private SetProductDto product = new();
+
+    private async Task SaveProduct()
+    {
+        await OnSave.InvokeAsync();
+    }
+
+}

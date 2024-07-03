@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BlazorWebApp.Dtos
 {
@@ -21,5 +21,12 @@ namespace BlazorWebApp.Dtos
 
         [Column("stock_quantity")]
         public int StockQuantity { get; set; }
+    }
+    public class FilterProductRequestDto
+    {
+        public List<GetProductDtos> ProductList { get; set; } = [];
+        public int TotalPage { get; set; }
+        public int PageSize { get; set; }
+        public int CurrentPage { get; set; }
     }
 }

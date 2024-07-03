@@ -39,7 +39,9 @@ D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\Swashbuck
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\WebApi.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\WebApiEntity.dll
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\WebApi.pdb
+D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\WebApiEntity.pdb
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\obj\Debug\net8.0\staticwebassets.build.json
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\obj\Debug\net8.0\staticwebassets.development.json
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\obj\Debug\net8.0\staticwebassets\msbuild.BlazorWebApp.Microsoft.AspNetCore.StaticWebAssets.props
@@ -57,5 +59,3 @@ D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\obj\Debug\net8.0\refint\Bl
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\obj\Debug\net8.0\BlazorWebApp.pdb
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\obj\Debug\net8.0\BlazorWebApp.genruntimeconfig.cache
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\obj\Debug\net8.0\ref\BlazorWebApp.dll
-D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\WebApiEntity.dll
-D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\WebApiEntity.pdb

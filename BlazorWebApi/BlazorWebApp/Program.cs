@@ -3,6 +3,7 @@ using BlazorWebApp.Services.Implementation;
 using BlazorWebApp.Services.Interface;
 using BlazorWebApp.Stores;
 using BlazorWebApp.Stores.CounterStore;
+using Microsoft.Extensions.FileProviders;
 using MudBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
