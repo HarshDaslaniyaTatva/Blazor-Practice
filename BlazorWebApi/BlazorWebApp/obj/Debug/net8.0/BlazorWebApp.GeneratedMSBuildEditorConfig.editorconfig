@@ -33,12 +33,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Project/Blazor/Assigment/BlazorWebApi/BlazorWebApp/Components/Pages/DeleteModal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEZWxldGVNb2RhbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Project/Blazor/Assigment/BlazorWebApi/BlazorWebApp/Components/Pages/DeleteProductModal.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEZWxldGVQcm9kdWN0TW9kYWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project/Blazor/Assigment/BlazorWebApi/BlazorWebApp/Components/Pages/EditProductModal.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFZGl0UHJvZHVjdE1vZGFsLnJhem9y
+[D:/Project/Blazor/Assigment/BlazorWebApi/BlazorWebApp/Components/Pages/EditModal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFZGl0TW9kYWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Project/Blazor/Assigment/BlazorWebApi/BlazorWebApp/Components/Pages/Error.razor]
@@ -55,6 +59,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Project/Blazor/Assigment/BlazorWebApi/BlazorWebApp/Components/Pages/ProductTable.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0VGFibGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/Blazor/Assigment/BlazorWebApi/BlazorWebApp/Components/Pages/ViewModal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xWaWV3TW9kYWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Project/Blazor/Assigment/BlazorWebApi/BlazorWebApp/Components/Routes.razor]

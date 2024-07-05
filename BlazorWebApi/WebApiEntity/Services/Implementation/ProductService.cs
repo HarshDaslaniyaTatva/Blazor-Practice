@@ -22,7 +22,7 @@ namespace WebApiEntity.Services.Implementation
             {
                 
 
-                var query = _dbContext.Products.AsQueryable();
+                var query = _dbContext.Products.Where(x=>x.IsDeleted == false).AsQueryable();
 
                 searchfield = searchfield ?? string.Empty;
                 sortfield = sortfield ?? string.Empty;
@@ -116,7 +116,7 @@ namespace WebApiEntity.Services.Implementation
         {
             try
             {
-                Product? data = await _dbContext.Products.FirstOrDefaultAsync(x => x.ProductId == id);
+                Product? data = await _dbContext.Products.FirstOrDefaultAsync(x => x.ProductId == id && x.IsDeleted == false);
 
                 if (data == null)
                 {
@@ -201,8 +201,8 @@ namespace WebApiEntity.Services.Implementation
                 {
                     return false;
                 }
-
-                _dbContext.Products.Remove(product);
+                product.IsDeleted = true;
+                _dbContext.Products.Update(product);
                 await _dbContext.SaveChangesAsync();
 
                 return true;

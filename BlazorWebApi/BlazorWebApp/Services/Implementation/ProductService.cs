@@ -120,11 +120,11 @@ namespace BlazorWebApp.Services.Implementation
 
 
 
-        public async Task<ResponseDto<bool>> UpdateProduct(int id, GetProductDtos productDto)
+        public async Task<ResponseDto<bool>> UpdateProduct(GetProductDtos productDto)
         {
             try
             {
-                var response = await _httpClient.PutAsJsonAsync($"api/product/{id}", productDto, _serializerOptions);
+                var response = await _httpClient.PutAsJsonAsync($"api/product/{productDto.ProductId}", productDto, _serializerOptions);
                 if (response.IsSuccessStatusCode)
                 {
                     return new ResponseDto<bool>

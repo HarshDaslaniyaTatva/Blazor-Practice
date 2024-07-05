@@ -30,6 +30,9 @@ public partial class Product
     [Column("created_at", TypeName = "timestamp without time zone")]
     public DateTime? CreatedAt { get; set; }
 
+    [Column("is_deleted")]
+    public bool? IsDeleted { get; set; }
+
     [InverseProperty("Product")]
     public virtual ICollection<Orderitem> Orderitems { get; set; } = new List<Orderitem>();
 }

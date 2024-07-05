@@ -1,4 +1,5 @@
 ﻿@inject IJSRuntime JSRuntime
+@rendermode InteractiveServer
 <!-- AddProductModal.razor -->
 
 <div class="modal fade" id="addProductModal" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel" aria-hidden="true">
@@ -6,31 +7,40 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="addProductModalLabel">Add Product</h5>
-                <button type="button" class="btn-close" aria-label="Close" @onclick="HideModal"></button>
-            </div>
-            <div class="modal-body">
-                <!-- Product Form -->
-                <div class="form-group">
-                    <label for="productName">Name</label>
-                    <input type="text" class="form-control" id="productName" @bind="@product.Name">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>  
+            <EditForm Model="@product" OnValidSubmit="@SaveProduct" Enhance>
+                    <DataAnnotationsValidator />
+                <div class="modal-body">
+                    <!-- Product Form -->
+              
+
+                        <div class="form-group">
+                            <label for="productName">Name</label>
+                            <InputText class="form-control" id="productName" @bind-Value="@product.Name" />
+                            <ValidationMessage For="@(() => product.Name)" />
+                        </div>
+                        <div class="form-group">
+                            <label for="productDescription">Description</label>
+                            <InputText class="form-control" id="productDescription" @bind-Value="@product.Description" />
+                            <ValidationMessage For="@(() => product.Description)" />
+                        </div>
+                        <div class="form-group">
+                            <label for="productPrice">Price</label>
+                            <InputNumber class="form-control" id="productPrice" @bind-Value="@product.Price" />
+                            <ValidationMessage For="@(() => product.Price)" />
+                        </div>
+                        <div class="form-group">
+                            <label for="productStock">Stock Quantity</label>
+                            <InputNumber class="form-control" id="productStock" @bind-Value="@product.StockQuantity" />
+                            <ValidationMessage For="@(() => product.StockQuantity)" />
+                        </div>
                 </div>
-                <div class="form-group">
-                    <label for="productDescription">Description</label>
-                    <input type="text" class="form-control" id="productDescription" @bind="@product.Description">
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" @onclick="HideModal">Close</button>
+                    <button type="submit" class="btn btn-primary" >Save changes</button>
                 </div>
-                <div class="form-group">
-                    <label for="productPrice">Price</label>
-                    <input type="number" class="form-control" id="productPrice" @bind="@product.Price">
-                </div>
-                <div class="form-group">
-                    <label for="productStock">Stock Quantity</label>
-                    <input type="number" class="form-control" id="productStock" @bind="@product.StockQuantity">
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" @onclick="HideModal">Close</button>
-                <button type="button" class="btn btn-primary" @onclick="SaveProduct">Save changes</button>
-            </div>
+            </EditForm>
         </div>
     </div>
 </div>
@@ -38,16 +48,18 @@
 @code {
     public async void HideModal()
     {
+        product = new();
         await JSRuntime.InvokeVoidAsync("hideModal", "addProductModal");
     }
 
     [Parameter]
     public EventCallback OnSave { get; set; }
 
-    private SetProductDto product = new();
+    public SetProductDto product  = new();
 
     private async Task SaveProduct()
     {
+        
         await OnSave.InvokeAsync();
     }
 

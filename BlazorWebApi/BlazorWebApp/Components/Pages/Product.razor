@@ -6,26 +6,30 @@
 @inject IJSRuntime JSRuntime
 
 <h3>Products</h3>
+<div class="text-end my-3">
+    <button class="btn btn-primary" @onclick="() => ShowAddModal()">Add Product</button>
+</div>
 <!-- Modal -->
-<AddModal OnSave="SaveProduct"></AddModal>
+<AddModal @ref="addModal" OnSave="AddProduct"></AddModal>
 <ProductTable @ref="productTable"></ProductTable>
 
 <!-- Button to Open Modal -->
-<div class="text-end">
-    <button class="btn btn-primary" @onclick="() => ShowAddModal()">Add Product</button>
-</div>
 
 
 @code {
-    public ProductTable productTable;
+    public ProductTable productTable = new();
+    public AddModal addModal = new();
     private async void ShowAddModal()
     {
         await JSRuntime.InvokeVoidAsync("showModal", "addProductModal");
     }
 
-    private async Task SaveProduct()
+    private async Task AddProduct()
     {
-        await productTable.LoadData(1);
         await JSRuntime.InvokeVoidAsync("hideModal", "addProductModal");
+
+        var response = await productService.AddProduct(addModal.product);
+
+        await productTable.LoadData(1);
     }
 }

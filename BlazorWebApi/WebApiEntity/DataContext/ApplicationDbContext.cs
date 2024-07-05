@@ -62,6 +62,7 @@ public partial class ApplicationDbContext : DbContext
             entity.HasKey(e => e.ProductId).HasName("products_pkey");
 
             entity.Property(e => e.CreatedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
+            entity.Property(e => e.IsDeleted).HasDefaultValue(false);
         });
 
         OnModelCreatingPartial(modelBuilder);
