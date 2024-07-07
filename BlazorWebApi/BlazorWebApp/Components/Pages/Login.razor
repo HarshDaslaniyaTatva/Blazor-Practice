@@ -1,0 +1,56 @@
+﻿@page "/login"
+@inject TokenService TokenService
+@inject NavigationManager NavigationManager
+@inject AuthenticationStateProvider AuthStateProvider
+@inject IHttpContextAccessor HttpContextAccessor
+@rendermode InteractiveServer
+@inject IJSRuntime js
+
+<h2>Login</h2>
+
+<div class="form-group">
+    <label for="username">Username:</label>
+    <input id="username" @bind="user.Username" class="form-control" />
+</div>
+<div class="form-group">
+    <label for="password">Password:</label>
+    <input id="password" @bind="user.Password" type="password" class="form-control" />
+</div>
+<button type="button" @onclick="Auth" class="btn btn-primary">Login</button>
+
+@code {
+    public User user { get; set; } = new User();
+
+    private async Task Auth()
+    {
+        
+        try
+        {
+            var authUser = new User { Username = "a", Password = "a", Role = "Admin" }; // Replace with actual authentication logic
+
+            if (user.Username != authUser.Username || user.Password != authUser.Password)
+            {
+                // Handle invalid login
+                Console.WriteLine("Invalid credentials");
+                return;
+            }
+
+            // Generate token asynchronously
+            string token = await TokenService.GenerateTokenAsync(authUser.Username, authUser.Role);
+
+            await js.InvokeVoidAsync("setCookie","AuthToken", token);
+
+            // Notify authentication state provider
+            var authProvider = (CustomAuthenticationStateProvider)AuthStateProvider;
+            authProvider.NotifyUserAuthentication(token); // Call without await
+
+            // Redirect to home page after successful authentication
+            NavigationManager.NavigateTo("/");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error during authentication: {ex.Message}");
+            await js.InvokeVoidAsync("alert", "Error during authentication");
+        }
+    }
+}

@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using WebApi.Dtos.Dtos;
 using WebApiEntity.DataContext;
 using WebApiEntity.DataModels;
 using WebApiEntity.Dtos.Request;
@@ -139,7 +140,31 @@ namespace WebApiEntity.Services.Implementation
                 throw new Exception("Internal Server Error");
             }
         }
+        public async Task<UserDto?> GetUser(int id)
+        {
+            
+                try
+                {
+                    DataModels.User? data = await _dbContext.Users.FirstOrDefaultAsync(x => x.Id == id) ;
 
+                    if (data == null)
+                    {
+                        return null;
+                    }
+                    UserDto user = new()
+                    {
+                        Id = data.Id,
+                        Username = data.Username,
+                        Role = data.Role,   
+                    };
+                    return user;
+                }
+                catch (Exception)
+                {
+                    throw new Exception("Internal Server Error");
+                }
+            
+        }
 
         public async Task<ProductRequestDto> AddProductAsync(ProductRequestDto productDto)
         {

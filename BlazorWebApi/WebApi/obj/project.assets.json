@@ -963,17 +963,55 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "WebApiEntity/1.0.0": {
+      "WebApi.Dtos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/WebApi.Dtos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebApi.Dtos.dll": {}
+        }
+      },
+      "WebApi.Entity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.4"
         },
         "compile": {
-          "bin/placeholder/WebApiEntity.dll": {}
+          "bin/placeholder/WebApi.Entity.dll": {}
         },
         "runtime": {
-          "bin/placeholder/WebApiEntity.dll": {}
+          "bin/placeholder/WebApi.Entity.dll": {}
+        }
+      },
+      "WebApi.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "WebApi.Dtos": "1.0.0",
+          "WebApi.Entity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WebApi.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebApi.Repository.dll": {}
+        }
+      },
+      "WebApi.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "WebApi.Dtos": "1.0.0",
+          "WebApi.Repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WebApi.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebApi.Service.dll": {}
         }
       }
     }
@@ -2721,10 +2759,25 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "WebApiEntity/1.0.0": {
+    "WebApi.Dtos/1.0.0": {
       "type": "project",
-      "path": "../WebApiEntity/WebApiEntity.csproj",
-      "msbuildProject": "../WebApiEntity/WebApiEntity.csproj"
+      "path": "../WebApi.Dtos/WebApi.Dtos.csproj",
+      "msbuildProject": "../WebApi.Dtos/WebApi.Dtos.csproj"
+    },
+    "WebApi.Entity/1.0.0": {
+      "type": "project",
+      "path": "../WebApi.Entity/WebApi.Entity.csproj",
+      "msbuildProject": "../WebApi.Entity/WebApi.Entity.csproj"
+    },
+    "WebApi.Repository/1.0.0": {
+      "type": "project",
+      "path": "../WebApi.Repository/WebApi.Repository.csproj",
+      "msbuildProject": "../WebApi.Repository/WebApi.Repository.csproj"
+    },
+    "WebApi.Service/1.0.0": {
+      "type": "project",
+      "path": "../WebApi.Service/WebApi.Service.csproj",
+      "msbuildProject": "../WebApi.Service/WebApi.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2732,7 +2785,8 @@
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.6",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 8.0.4",
       "Swashbuckle.AspNetCore >= 6.4.0",
-      "WebApiEntity >= 1.0.0"
+      "WebApi.Dtos >= 1.0.0",
+      "WebApi.Service >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2763,8 +2817,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\WebApiEntity\\WebApiEntity.csproj": {
-              "projectPath": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\WebApiEntity\\WebApiEntity.csproj"
+            "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\WebApi.Dtos\\WebApi.Dtos.csproj": {
+              "projectPath": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\WebApi.Dtos\\WebApi.Dtos.csproj"
+            },
+            "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\WebApi.Service\\WebApi.Service.csproj": {
+              "projectPath": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\WebApi.Service\\WebApi.Service.csproj"
             }
           }
         }

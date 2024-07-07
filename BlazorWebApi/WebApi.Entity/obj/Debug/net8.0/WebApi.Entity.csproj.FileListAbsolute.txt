@@ -1,0 +1,13 @@
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Entity\bin\Debug\net8.0\WebApi.Entity.deps.json
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Entity\bin\Debug\net8.0\WebApi.Entity.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Entity\bin\Debug\net8.0\WebApi.Entity.pdb
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Entity\obj\Debug\net8.0\WebApi.Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Entity\obj\Debug\net8.0\WebApi.Entity.AssemblyInfoInputs.cache
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Entity\obj\Debug\net8.0\WebApi.Entity.AssemblyInfo.cs
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Entity\obj\Debug\net8.0\WebApi.Entity.csproj.CoreCompileInputs.cache
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Entity\obj\Debug\net8.0\WebApi.Entity.sourcelink.json
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Entity\obj\Debug\net8.0\WebApi.Entity.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Entity\obj\Debug\net8.0\refint\WebApi.Entity.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Entity\obj\Debug\net8.0\WebApi.Entity.pdb
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Entity\obj\Debug\net8.0\ref\WebApi.Entity.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Entity\obj\Debug\net8.0\WebApi.Entity.csproj.AssemblyReference.cache

@@ -875,6 +875,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "WebApi.Dtos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/WebApi.Dtos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebApi.Dtos.dll": {}
+        }
       }
     }
   },
@@ -2291,12 +2301,18 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "WebApi.Dtos/1.0.0": {
+      "type": "project",
+      "path": "../WebApi.Dtos/WebApi.Dtos.csproj",
+      "msbuildProject": "../WebApi.Dtos/WebApi.Dtos.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.6",
-      "Npgsql.EntityFrameworkCore.PostgreSQL >= 8.0.4"
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 8.0.4",
+      "WebApi.Dtos >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2326,7 +2342,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\WebApi.Dtos\\WebApi.Dtos.csproj": {
+              "projectPath": "D:\\Project\\Blazor\\Assigment\\BlazorWebApi\\WebApi.Dtos\\WebApi.Dtos.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -81,8 +81,6 @@ D:\Project\Blazor\Assigment\BlazorWebApi\WebApi\bin\Debug\net8.0\ru\Microsoft.Co
 D:\Project\Blazor\Assigment\BlazorWebApi\WebApi\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Project\Blazor\Assigment\BlazorWebApi\WebApi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Project\Blazor\Assigment\BlazorWebApi\WebApi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Project\Blazor\Assigment\BlazorWebApi\WebApi\bin\Debug\net8.0\WebApiEntity.dll
-D:\Project\Blazor\Assigment\BlazorWebApi\WebApi\bin\Debug\net8.0\WebApiEntity.pdb
 D:\Project\Blazor\Assigment\BlazorWebApi\WebApi\obj\Debug\net8.0\WebApi.csproj.AssemblyReference.cache
 D:\Project\Blazor\Assigment\BlazorWebApi\WebApi\obj\Debug\net8.0\WebApi.GeneratedMSBuildEditorConfig.editorconfig
 D:\Project\Blazor\Assigment\BlazorWebApi\WebApi\obj\Debug\net8.0\WebApi.AssemblyInfoInputs.cache
@@ -105,3 +103,11 @@ D:\Project\Blazor\Assigment\BlazorWebApi\WebApi\obj\Debug\net8.0\refint\WebApi.d
 D:\Project\Blazor\Assigment\BlazorWebApi\WebApi\obj\Debug\net8.0\WebApi.pdb
 D:\Project\Blazor\Assigment\BlazorWebApi\WebApi\obj\Debug\net8.0\WebApi.genruntimeconfig.cache
 D:\Project\Blazor\Assigment\BlazorWebApi\WebApi\obj\Debug\net8.0\ref\WebApi.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi\bin\Debug\net8.0\WebApi.Dtos.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi\bin\Debug\net8.0\WebApi.Entity.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi\bin\Debug\net8.0\WebApi.Dtos.pdb
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi\bin\Debug\net8.0\WebApi.Entity.pdb
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi\bin\Debug\net8.0\WebApi.Repository.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi\bin\Debug\net8.0\WebApi.Service.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi\bin\Debug\net8.0\WebApi.Service.pdb
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi\bin\Debug\net8.0\WebApi.Repository.pdb

@@ -1,0 +1,12 @@
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Dtos\bin\Debug\net8.0\WebApi.Dtos.deps.json
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Dtos\bin\Debug\net8.0\WebApi.Dtos.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Dtos\bin\Debug\net8.0\WebApi.Dtos.pdb
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Dtos\obj\Debug\net8.0\WebApi.Dtos.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Dtos\obj\Debug\net8.0\WebApi.Dtos.AssemblyInfoInputs.cache
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Dtos\obj\Debug\net8.0\WebApi.Dtos.AssemblyInfo.cs
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Dtos\obj\Debug\net8.0\WebApi.Dtos.csproj.CoreCompileInputs.cache
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Dtos\obj\Debug\net8.0\WebApi.Dtos.sourcelink.json
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Dtos\obj\Debug\net8.0\WebApi.Dtos.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Dtos\obj\Debug\net8.0\refint\WebApi.Dtos.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Dtos\obj\Debug\net8.0\WebApi.Dtos.pdb
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApi.Dtos\obj\Debug\net8.0\ref\WebApi.Dtos.dll

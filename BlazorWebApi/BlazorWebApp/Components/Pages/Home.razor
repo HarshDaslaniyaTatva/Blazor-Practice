@@ -1,13 +1,31 @@
-﻿@rendermode InteractiveServer
+﻿
 @inject IJSRuntime JSRuntime
 @page "/"
 
 
-<h3>Run JavaScript in Blazor</h3>
+<AuthorizeView>
+    <Authorized>
+        <h1>hello  @context.User.Identity.Name! </h1>
+    </Authorized>
+    <NotAuthorized>
+        <h1>Guest</h1>
+    </NotAuthorized>
+</AuthorizeView>
 
-<button @onclick="RunJavaScript">Run JavaScript</button>
+<h3>Run JavaScript in Blazor</h3>
+<AuthorizeView>
+    <Authorized>
+        <button @onclick="RunJavaScript">Run JavaScript</button>
+    </Authorized>
+    <NotAuthorized>
+    </NotAuthorized>
+</AuthorizeView>
+
+
 
 @code {
+    [CascadingParameter]
+    private Task<AuthenticationState> AuthenticationState{ get; set; }
     private async Task RunJavaScript()
     {
         try

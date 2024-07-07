@@ -11,7 +11,8 @@
           "Microsoft.EntityFrameworkCore.Tools": "8.0.6",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.4",
           "Swashbuckle.AspNetCore": "6.4.0",
-          "WebApiEntity": "1.0.0"
+          "WebApi.Dtos": "1.0.0",
+          "WebApi.Service": "1.0.0"
         },
         "runtime": {
           "WebApi.dll": {}
@@ -540,12 +541,35 @@
         }
       },
       "System.Threading.Channels/6.0.0": {},
-      "WebApiEntity/1.0.0": {
+      "WebApi.Dtos/1.0.0": {
+        "runtime": {
+          "WebApi.Dtos.dll": {}
+        }
+      },
+      "WebApi.Entity/1.0.0": {
         "dependencies": {
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.4"
         },
         "runtime": {
-          "WebApiEntity.dll": {}
+          "WebApi.Entity.dll": {}
+        }
+      },
+      "WebApi.Repository/1.0.0": {
+        "dependencies": {
+          "WebApi.Dtos": "1.0.0",
+          "WebApi.Entity": "1.0.0"
+        },
+        "runtime": {
+          "WebApi.Repository.dll": {}
+        }
+      },
+      "WebApi.Service/1.0.0": {
+        "dependencies": {
+          "WebApi.Dtos": "1.0.0",
+          "WebApi.Repository": "1.0.0"
+        },
+        "runtime": {
+          "WebApi.Service.dll": {}
         }
       }
     }
@@ -885,7 +909,22 @@
       "path": "system.threading.channels/6.0.0",
       "hashPath": "system.threading.channels.6.0.0.nupkg.sha512"
     },
-    "WebApiEntity/1.0.0": {
+    "WebApi.Dtos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WebApi.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WebApi.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WebApi.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

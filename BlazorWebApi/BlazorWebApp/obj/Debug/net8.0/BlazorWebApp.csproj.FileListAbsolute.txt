@@ -17,6 +17,7 @@ D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\BlazorWeb
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\BlazorWebApp.runtimeconfig.json
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\BlazorWebApp.dll
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\BlazorWebApp.pdb
+D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
@@ -30,6 +31,12 @@ D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\Microsoft
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\Microsoft.JSInterop.dll
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\Microsoft.OpenApi.dll
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\MudBlazor.dll
@@ -38,10 +45,9 @@ D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\Npgsql.En
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\WebApi.dll
-D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\WebApiEntity.dll
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\WebApi.pdb
-D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\WebApiEntity.pdb
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\obj\Debug\net8.0\staticwebassets.build.json
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\obj\Debug\net8.0\staticwebassets.development.json
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\obj\Debug\net8.0\staticwebassets\msbuild.BlazorWebApp.Microsoft.AspNetCore.StaticWebAssets.props
@@ -59,3 +65,11 @@ D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\obj\Debug\net8.0\refint\Bl
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\obj\Debug\net8.0\BlazorWebApp.pdb
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\obj\Debug\net8.0\BlazorWebApp.genruntimeconfig.cache
 D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\obj\Debug\net8.0\ref\BlazorWebApp.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\WebApi.Dtos.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\WebApi.Entity.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\WebApi.Dtos.pdb
+D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\WebApi.Entity.pdb
+D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\WebApi.Repository.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\WebApi.Service.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\WebApi.Repository.pdb
+D:\Project\Blazor\Assigment\BlazorWebApi\BlazorWebApp\bin\Debug\net8.0\WebApi.Service.pdb

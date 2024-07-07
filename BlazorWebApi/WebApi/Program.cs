@@ -1,7 +1,10 @@
 using Microsoft.EntityFrameworkCore;
-using WebApiEntity.DataContext;
-using WebApiEntity.Services.Implementation;
-using WebApiEntity.Services.Interface;
+using WebApi.Entity.DataContext;
+using WebApi.Repository.Implementation;
+using WebApi.Repository.Interface;
+using WebApi.Service.Implementation;
+using WebApi.Service.Interface;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +18,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 var app = builder.Build();
 

@@ -79,6 +79,25 @@ namespace BlazorWebApp.Services.Implementation
             }
         }
 
+        public async Task<User?> GetUser(string username)
+        {
+            try
+            {
+                return new()
+                {
+                    Username = "admin",
+                    Password = "admin",
+                    Role = "admin",
+                };
+                //return await _httpClient.GetFromJsonAsync<User>($"api/user/{username}");
+            }
+            catch (System.Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+        }
+
         public async Task<ResponseDto<bool>> AddProduct(SetProductDto productDto)
         {
             try

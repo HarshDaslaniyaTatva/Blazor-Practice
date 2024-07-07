@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WebApiEntity.DataContext;
+using WebApi.Service.Interface;
 using WebApiEntity.Dtos.Request;
-using WebApiEntity.Services.Implementation;
-using WebApiEntity.Services.Interface;
 
 namespace WebApi.Controllers
 {
@@ -29,7 +27,7 @@ namespace WebApi.Controllers
         {
             try
             {
-                var products = await _productService.GetProductsAsync(pagesize, currentpage, sortfield, sort, searchfield, search);
+                var products = await _productService.GetAllProductsAsync(pagesize, currentpage, sortfield, sort, searchfield, search);
                 return Ok(products);
             }
             catch (Exception ex)
@@ -60,6 +58,7 @@ namespace WebApi.Controllers
             return Ok(data);
         }
 
+
         // Add a new product
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -71,9 +70,9 @@ namespace WebApi.Controllers
                 return BadRequest();
             }
 
-            var result = await _productService.AddProductAsync(productDto);
+            var result =  _productService.AddProduct(productDto);
 
-            if (result != null)
+            if (result)
             {
                 return Ok(true);
             }

@@ -1,0 +1,24 @@
+﻿@using BlazorWebApp.Authentication
+@inject NavigationManager navManagaer
+@inject AuthenticationStateProvider AuthStateProvider
+@inject IJSRuntime js
+@rendermode InteractiveServer
+
+<AuthorizeView>
+    <Authorized>
+        <button @onclick="SetLogout" type="button" class="btn btn-outline-primary">Logout</button>
+    </Authorized>
+    <NotAuthorized>
+        <a href="login" class="btn btn-primary">Login</a>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+    private async void SetLogout()
+    {
+        await js.InvokeVoidAsync("setCookie", "AuthToken", "");
+        var authProvider = (CustomAuthenticationStateProvider)AuthStateProvider;
+        authProvider.MarkUserAsLoggedOut();
+        navManagaer.NavigateTo("login");
+    }
+}

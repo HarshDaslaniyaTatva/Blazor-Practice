@@ -1,9 +1,6 @@
 ﻿@using BlazorWebApp.Stores.CounterStore
 @using System.Diagnostics
-@rendermode InteractiveServer
 @inject CounterStore CounterStore
-@implements IDisposable
-
 <div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">BlazorWebApp</a>
@@ -19,17 +16,26 @@
                 <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
             </NavLink>
         </div>
-
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter : @CounterStore.GetState().Count
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="product">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Product
-            </NavLink>
-        </div>
+      
+        <AuthorizeView Roles="Admin , User">
+            <Authorized>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="counter">
+                        <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter : @CounterStore.GetState().Count
+                    </NavLink>
+                </div>
+            </Authorized>
+        </AuthorizeView>
+        <AuthorizeView Roles="Admin">
+            <Authorized>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="product">
+                        <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Product
+                    </NavLink>
+                </div>
+            </Authorized>
+        </AuthorizeView>
+       
     </nav>
 </div>
 @code {
@@ -41,10 +47,7 @@
         CounterStore.AddStateChangeListener(StateHasChanged);
     }
 
-    public void Dispose()
-    {
-        CounterStore.RemoveStateChangeListener(StateHasChanged);
-    }
+  
 }
 
 

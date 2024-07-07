@@ -2,34 +2,42 @@
 @using BlazorWebApp.Stores
 @using BlazorWebApp.Stores.CounterStore
 @using System.Diagnostics
+@using Microsoft.AspNetCore.Authorization
 @rendermode InteractiveServer
 @inject CounterStore CounterStore
 @inject IActionDispatcher actionDispatcher
 @implements IDisposable
-
-
 <PageTitle>Counter</PageTitle>
 
-<h1>Counter</h1>
+<AuthorizeView Roles="Admin, User">
+    <Authorized>
+        <h1>Counter</h1>
 
-<p role="status">Current count:@CounterStore.GetState().Count</p>
+        <p role="status">Current count</p>
+        <p role="status">Current count:@CounterStore.GetState().Count</p>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+        <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
-@code {
+        @code {
 
-    private void IncrementCount()
-    {
-        actionDispatcher.Dispatch(new IncrementAction());
-    }
+        private void IncrementCount()
+        {
+            actionDispatcher.Dispatch(new IncrementAction());
+        }
 
-    protected override void OnInitialized()
-    {
-        CounterStore.AddStateChangeListener(StateHasChanged);
-    }
+        protected override void OnInitialized()
+        {
+            CounterStore.AddStateChangeListener(StateHasChanged);
+        }
 
-    public void Dispose()
-    {
-        CounterStore.RemoveStateChangeListener(StateHasChanged);
-    }
-}
+        public void Dispose()
+        {
+            CounterStore.RemoveStateChangeListener(StateHasChanged);
+        }
+        }
+
+    </Authorized>
+    <NotAuthorized>
+        403
+    </NotAuthorized>
+</AuthorizeView>

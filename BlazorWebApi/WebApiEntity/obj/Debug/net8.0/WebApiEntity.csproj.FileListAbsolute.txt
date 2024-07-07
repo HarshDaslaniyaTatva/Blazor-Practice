@@ -13,3 +13,6 @@ D:\Project\Blazor\Assigment\BlazorWebApi\WebApiEntity\obj\Debug\net8.0\refint\We
 D:\Project\Blazor\Assigment\BlazorWebApi\WebApiEntity\obj\Debug\net8.0\WebApiEntity.pdb
 D:\Project\Blazor\Assigment\BlazorWebApi\WebApiEntity\obj\Debug\net8.0\WebApiEntity.genruntimeconfig.cache
 D:\Project\Blazor\Assigment\BlazorWebApi\WebApiEntity\obj\Debug\net8.0\ref\WebApiEntity.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApiEntity\bin\Debug\net8.0\WebApi.Dtos.dll
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApiEntity\bin\Debug\net8.0\WebApi.Dtos.pdb
+D:\Project\Blazor\Assigment\BlazorWebApi\WebApiEntity\obj\Debug\net8.0\WebApiEn.C1572937.Up2Date
